@@ -24,16 +24,31 @@ RSpec.describe LinksController, :type => :controller do
   describe 'POST create' do
     let(:link_params) { { url: 'https://test.org' } }
     let(:link_class) { class_double(Link).as_stubbed_const }
+    let(:link_object) { double(Link, save: true) }
 
-    it 'creates a new link' do
-      expect(link_class).to receive(:create).with(link_params)
+    before(:each) do
+      allow(link_class).to receive(:new).and_return(link_object)
+    end
+
+    it 'attempts to creates a new link' do
+      expect(link_class).to receive(:new).with(link_params).and_return(link_object)
       post :create, link: link_params
     end
 
-    it 'redirects to the index path' do
-      allow(link_class).to receive(:create)
-      post :create, link: link_params
-      expect(response).to redirect_to(links_path)
+    context 'create successful' do
+      it 'redirects to the index path' do
+        post :create, link: link_params
+        expect(response).to redirect_to(links_path)
+      end
+    end
+
+    context 'create unsuccessful' do
+      let(:link_object) { double(Link, save: false) }
+
+      it 'renders the new template' do
+        post :create, link: link_params
+        expect(response).to render_template(:new)
+      end
     end
   end
 

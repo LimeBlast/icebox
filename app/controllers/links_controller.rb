@@ -8,9 +8,13 @@ class LinksController < ApplicationController
   end
 
   def create
-    Link.create(link_params)
-    flash[:notice] = 'Link was successfully created'
-    redirect_to links_path
+    @link = Link.new(link_params)
+    if @link.save
+      flash[:notice] = 'Link was successfully created'
+      redirect_to links_path
+    else
+      render :new
+    end
   end
 
   private
