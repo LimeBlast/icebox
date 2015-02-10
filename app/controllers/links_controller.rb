@@ -13,6 +13,7 @@ class LinksController < ApplicationController
       flash[:notice] = 'Link was successfully created'
       redirect_to links_path
     else
+      flash.now[:error] = 'Something went wrong, please try again'
       render :new
     end
   end
