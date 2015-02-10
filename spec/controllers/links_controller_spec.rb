@@ -3,10 +3,11 @@ require 'rails_helper'
 RSpec.describe LinksController, :type => :controller do
 
   describe 'GET new' do
+    let(:link_class) { class_double(Link).as_stubbed_const }
+    let(:link) { object_double(Link) }
+
     before(:each) do
-      @link       = object_double(Link.new)
-      @link_class = class_double(Link).as_stubbed_const
-      allow(@link_class).to receive(:new).and_return(@link)
+      allow(link_class).to receive(:new).and_return(link)
     end
 
     it 'returns http success' do
@@ -15,7 +16,7 @@ RSpec.describe LinksController, :type => :controller do
     end
 
     it 'assigns a link model' do
-      expect(@link_class).to receive(:new).and_return(@link)
+      expect(link_class).to receive(:new).and_return(link)
       get :new
     end
   end
