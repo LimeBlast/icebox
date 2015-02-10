@@ -22,9 +22,11 @@ end
 group :development do
   gem 'guard'
   gem 'guard-rspec', require: false
+  gem 'spring-commands-rspec'
 end
 
 group :test do
   gem 'shoulda-matchers', require: false
   gem 'rspec-html-matchers'
+  gem 'database_cleaner'
 end
