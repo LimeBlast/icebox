@@ -2,6 +2,48 @@ require 'rails_helper'
 
 RSpec.describe LinksController, :type => :controller do
 
+  describe 'GET index' do
+    let(:link_class) { class_double(Link).as_stubbed_const }
+
+    it 'renders the index template' do
+      allow(link_class).to receive(:all)
+      get :index
+      expect(response).to render_template(:index)
+    end
+
+    it 'sends the all method to Link' do
+      expect(link_class).to receive(:all)
+      get :index
+    end
+  end
+
+  describe 'GET show' do
+    before(:each) do
+      @link       = object_double(Link.new, url: 'http://something.com')
+      @link_class = class_double(Link).as_stubbed_const
+      @pismo_dub  = class_double(Pismo::Document).as_stubbed_const
+    end
+
+    it 'fetches the requested link' do
+      expect(@link_class).to receive(:find).with('1').and_return(@link)
+      allow(@pismo_dub).to receive_message_chain(:new, :body)
+      get :show, id: 1
+    end
+
+    it 'renders the show template' do
+      allow(@link_class).to receive(:find).and_return(@link)
+      allow(@pismo_dub).to receive_message_chain(:new, :body)
+      get :show, id: 1
+      expect(response).to render_template(:show)
+    end
+
+    it "fetches a url's content from pismo" do
+      allow(@link_class).to receive(:find).and_return(@link)
+      expect(@pismo_dub).to receive_message_chain(:new, :body)
+      get :show, id: 1
+    end
+  end
+
   describe 'GET new' do
     let(:link_class) { class_double(Link).as_stubbed_const }
     let(:link) { object_double(Link) }
