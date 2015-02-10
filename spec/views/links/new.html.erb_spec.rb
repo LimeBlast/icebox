@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'links/new.html.erb', :type => :view do
-  let(:link) { FactoryGirl.build(:link) }
+  let(:link) { build(:link) }
 
   before :each do
     assign(:link, link)
