@@ -65,6 +65,10 @@ RSpec.describe LinksController, :type => :controller do
     let(:link_class) { class_double(Link).as_stubbed_const }
     let(:link_object) { double(Link, save: true) }
 
+    it 'scrapes the url submitted' do
+
+    end
+
     it 'attempts to creates a new link' do
       expect(link_class).to receive(:new).with(link_params).and_return(link_object)
       post :create, link: link_params
@@ -86,21 +90,6 @@ RSpec.describe LinksController, :type => :controller do
         post :create, link: link_params
         expect(response).to render_template(:new)
       end
-    end
-  end
-
-  describe 'GET index' do
-    let(:link_class) { class_double(Link).as_stubbed_const }
-
-    it 'renders the index template' do
-      allow(link_class).to receive(:all)
-      get :index
-      expect(response).to render_template(:index)
-    end
-
-    it 'sends the all method to Link' do
-      expect(link_class).to receive(:all)
-      get :index
     end
   end
 

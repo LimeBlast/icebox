@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'pismo'
 
 group :development, :test do
   gem 'byebug'
@@ -29,4 +29,8 @@ group :test do
   gem 'shoulda-matchers', require: false
   gem 'rspec-html-matchers'
   gem 'database_cleaner'
+end
+
+group :doc do
+  gem 'sdoc', '~> 0.4.0'
 end
