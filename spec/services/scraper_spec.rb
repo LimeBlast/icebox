@@ -21,12 +21,12 @@ RSpec.describe Scraper do
   end
 
   it 'returns the page title' do
-    scraper = Scraper.new url: url
+    scraper = Scraper.new(url: url)
     expect(scraper.title).to eq "My Name is Daniel - a Web developer's curriculum vitae (CV)"
   end
 
   it 'returns the page body' do
-    scraper = Scraper.new url: url
+    scraper = Scraper.new(url: url)
     expect(scraper.body).to include 'I found that finding work, despite my self-taught skills, difficult due to a lack of qualifications, which prompted me to go to university.'
   end
 end
