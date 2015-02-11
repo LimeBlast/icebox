@@ -3,22 +3,10 @@ require 'pismo'
 class Scraper
   attr_reader :url, :title, :body
 
-  def scrape(url)
-    @url   = url
+  def initialize(attr = {})
+    @url   = attr.fetch(:url)
     doc    = Pismo::Document.new(url)
     @title = doc.title
     @body  = doc.body
-  end
-
-  def url
-    @url || raise(ArgumentError, '.scrape(url) must be called first')
-  end
-
-  def title
-    @title || raise(ArgumentError, '.scrape(url) must be called first')
-  end
-
-  def body
-    @body || raise(ArgumentError, '.scrape(url) must be called first')
   end
 end
