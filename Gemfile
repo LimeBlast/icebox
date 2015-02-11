@@ -29,6 +29,8 @@ group :test do
   gem 'shoulda-matchers', require: false
   gem 'rspec-html-matchers'
   gem 'database_cleaner'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :doc do

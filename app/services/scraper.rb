@@ -1,7 +1,7 @@
 require 'pismo'
 
 class Scraper
-  attr_accessor :url, :title, :body
+  attr_reader :url, :title, :body
 
   def scrape(url)
     @url   = url

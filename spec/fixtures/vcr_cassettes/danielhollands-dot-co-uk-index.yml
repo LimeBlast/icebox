@@ -1,0 +1,325 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://danielhollands.co.uk/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Feb 2015 16:31:01 GMT
+      Server:
+      - Apache
+      Last-Modified:
+      - Thu, 09 Oct 2014 21:41:55 GMT
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Wed, 11 Feb 2015 16:31:01 GMT
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Content-Length:
+      - '7131'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html>\n<!--[if lt IE 7]>      <html class=\"no-js lt-ie9
+        lt-ie8 lt-ie7\"> <![endif]-->\n<!--[if IE 7]>         <html class=\"no-js
+        lt-ie9 lt-ie8\"> <![endif]-->\n<!--[if IE 8]>         <html class=\"no-js
+        lt-ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->\n<head
+        prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#\">\n\t<meta
+        charset=\"utf-8\">\n\t<title>My Name is Daniel - a Web developer's curriculum
+        vitae (CV)</title>\n\t<meta name=\"description\" content=\"I am a Web Developer
+        with a passion for the World Wide Web and this is my curriculum vitae.\"/>\n\t<meta
+        name=\"viewport\" content=\"width=device-width\"/>\n\t<link rel=\"author\"
+        href=\"humans.txt\"/>\n\t<link rel=\"canonical\" href=\"http://danielhollands.co.uk\"/>\n\n
+        \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"152x152\" href=\"apple-touch-icon-152x152-precomposed.png\"
+        />\n    <link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"apple-touch-icon-144x144-precomposed.png\"
+        />\n    <link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"apple-touch-icon-114x114-precomposed.png\"
+        />\n    <link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"apple-touch-icon-72x72-precomposed.png\"
+        />\n    <link rel=\"apple-touch-icon-precomposed\" href=\"apple-touch-icon-precomposed.png\"
+        />\n    <link rel=\"shortcut icon\" href=\"favicon.png\" />\n    <link rel=\"icon\"
+        type=\"image/ico\" href=\"favicon.ico\" />\n\n\t<!-- Open Graph: http://ogp.me/
+        -->\n\t<meta property=\"og:title\" content=\"My Name is Daniel\"/>\n\t<meta
+        property=\"og:description\" content=\"I am a Web Developer with a passion
+        for the World Wide Web and this is my curriculum vitae.\"/>\n\t<meta property=\"og:url\"
+        content=\"http://danielhollands.co.uk/\"/>\n\t<meta property=\"og:image\"
+        content=\"http://danielhollands.co.uk/open-graph.png\"/>\n\t<meta property=\"og:locale\"
+        content=\"en_GB\"/>\n\t<meta property=\"og:type\" content=\"profile\"/>\n\t<meta
+        property=\"profile:first_name\" content=\"Daniel\"/>\n\t<meta property=\"profile:last_name\"
+        content=\"Hollands\"/>\n\t<meta property=\"profile:username\" content=\"LimeBlast\"/>\n\t<meta
+        property=\"profile:gender\" content=\"male\"/>\n\n\t<!-- Twitter Card: https://dev.twitter.com/docs/cards
+        -->\n\t<meta name=\"twitter:card\" content=\"summary\">\n\t<meta name=\"twitter:creator\"
+        content=\"@limeblast\">\n\t<meta name=\"twitter:url\" content=\"http://danielhollands.co.uk/\">\n\t<meta
+        name=\"twitter:title\" content=\"My Name is Daniel\">\n\t<meta name=\"twitter:description\"
+        content=\"I am a Web Developer with a passion for the World Wide Web and this
+        is my curriculum vitae.\">\n\t<meta name=\"twitter:image\" content=\"http://danielhollands.co.uk/open-graph.png\">\n\n\t<!--
+        Windows Tile Icon: http://www.buildmypinnedsite.com/ -->\n\t<meta name=\"application-name\"
+        content=\"My Name is Daniel\"/>\n\t<meta name=\"msapplication-TileColor\"
+        content=\"#619EC2\"/>\n\t<meta name=\"msapplication-TileImage\" content=\"/windows-tile-icon.png\"/>\n\n\t<link
+        href=\"/css/application-7b834440.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\n\t<script src=\"/js/vendor/modernizr-2.6.1-4d33c003.js\" type=\"text/javascript\"></script>\n</head>\n<body>\n\n\t<div
+        class=\"wrap\">\n\n  <div class=\"menu\">\n  <div class=\"fixed\">\n\n    <div
+        id=\"shownav\" class=\"shownav\">\n      <nav class=\"navigation\" role=\"navigation\">\n
+        \       <ul id=\"navigation\">\n          <li class=\"current\"><a href=\"#header\">Introduction</a></li>\n
+        \         <li><a href=\"#about-me\">About Me</a></li>\n          <li><a href=\"#key-skills\">Key
+        Skills</a></li>\n          <li><a href=\"#education\">Education</a></li>\n
+        \         <li><a href=\"#employment\">Employment</a></li>\n          <li><a
+        href=\"#projects\">Projects</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n
+        \         <!--li class=\"pdf\"><a href=\"/Daniel-Hollands-CV.pdf\" class=\"external\">Download
+        CV</a></li-->\n        </ul>\n      </nav>\n\n      <div class=\"social-links\">\n\t<ul>\n\t\t<li><a
+        href=\"http://twitter.com/limeblast/\" class=\"twitter\" title=\"@LimeBlast
+        on Twitter\">@LimeBlast on\tTwitter</a></li>\n\t\t<li><a href=\"http://facebook.com/limeblast/\"
+        class=\"facebook\" title=\"LimeBlast on Facebook\">LimeBlast on Facebook</a></li>\n\t\t<li><a
+        href=\"https://plus.google.com/112741180856524338972?rel=author\" class=\"google-plus\"
+        title=\"Daniel Hollands on Google+\">Daniel Hollands on Google+</a></li>\n\t\t<li><a
+        href=\"http://uk.linkedin.com/in/limeblast\" class=\"linkedin\" title=\"Daniel
+        Hollands on LinkedIn\">Daniel Hollands on LinkedIn</a></li>\n\t\t<li><a href=\"http://stackoverflow.com/users/1049688/daniel-hollands\"
+        class=\"stack-overflow\" title=\"Daniel Hollands on Stack Overflow\">Daniel
+        Hollands on Stack Overflow</a></li>\n\t\t<li><a href=\"http://careers.stackoverflow.com/limeblast\"
+        class=\"careers-20\" title=\"Daniel Hollands on Careers 2.0\">Daniel Hollands
+        on Careers 2.0</a></li>\n\t\t<li><a href=\"https://github.com/LimeBlast\"
+        class=\"github\" title=\"LimeBlast on GitHub\">LimeBlast on GitHub</a></li>\n\t\t<li><a
+        href=\"https://bitbucket.org/LimeBlast\" class=\"bitbucket\" title=\"LimeBlast
+        on BitBucket\">LimeBlast on BitBucket</a></li>\n\t\t<li><a href=\"http://www.codeschool.com/users/LimeBlast\"
+        class=\"code-school\" title=\"LimeBlast on Code School\">LimeBlast on Code
+        School</a></li>\n\t\t<li><a href=\"http://limeblast.co.uk/\" class=\"lime-blast\"
+        title=\"Lime Blast Blog\">Lime Blast Blog</a></li>\n\t</ul>\n</div><!-- .social-links
+        -->\n\n    </div>\n\n    <div id=\"shownavbutton\" class=\"shownavbutton\">\n
+        \     Navigation\n    </div>\n\n  </div>\n</div>\n\n    <article class=\"main\"
+        role=\"main\">\n      <header id=\"header\" class=\"header\" role=\"banner\">\n\n
+        \ <h1 class=\"header-title\">My Name is Daniel.</h1>\n\n  <div class=\"header-image\">\n
+        \   <img src=\"/img/header-227fd657.png\" data-at2x=\"/img/header@2x-33ccb3a7.png\"
+        alt=\"\"/>\n  </div>\n\n  <div class=\"header-copy\">\n    <p>\n      <span
+        class=\"slabtext\">I am a <span class=\"highlight\">Web Developer</span></span>\n
+        \     <span class=\"slabtext\">with a passion for the</span>\n      <span
+        class=\"slabtext highlight\">World Wide Web.</span>\n    </p>\n\n    <p>\n
+        \     <span class=\"slabtext\">Welcome to my</span>\n      <span class=\"slabtext
+        highlight\">curriculum vitae.</span>\n    </p>\n  </div>\n\n  <!--[if lt IE
+        9]>\n  <p class=\"chromeframe\">You are using an outdated browser. <a href=\"http://browsehappy.com/\">Upgrade
+        your browser\n      today</a> or <a href=\"http://www.google.com/chromeframe/?redirect=true\">install
+        Google Chrome Frame</a> to better\n      experience this site.</p>\n  <![endif]-->\n\n</header>\n
+        \     <section id=\"about-me\" class=\"about-me\">\n\n  <h2>About Me</h2>\n\n
+        \ <div class=\"about-copy\">\n    <p>I believe the World Wide Web is the greatest
+        thing the human race has ever developed, and I'm proud to contribute\n      towards
+        its ongoing development by building quality Web sites and promoting accessibility
+        and usability. </p>\n\n    <p>I graduated from the University of Worcester
+        in 2010, obtaining a first class honours degree, which I feel is the\n      greatest
+        achievement of my life (so far).</p>\n\n    <p>I have a keen interest in self
+        development and I like to employ the scientific method to everything that
+        I do by\n      making choices based on research and evidence.</p>\n\n    <p>In
+        my spare time I enjoy experimenting with new technology,\n      <a href=\"http://limeblast.co.uk/\">writing
+        articles for my blog</a>, playing trading card and computer games, and\n      exploring
+        the outside world, either by bicycle or on foot.</p>\n  </div>\n\n</section>\n
+        \     <section id=\"key-skills\" class=\"key-skills\">\n\n  <h2>Key Skills</h2>\n\n
+        \ <ul class=\"skills-list\">\n    <li class=\"coding\">\n      <h3>Coding</h3>\n\n
+        \     <p>Professional experience of coding tools and technologies including\n
+        \       <abbr title=\"PHP: Hypertext Preprocessor\">PHP</abbr>, <abbr title=\"My
+        Structure Query Language\">MySQL</abbr>,\n        <abbr title=\"Hyper Text
+        Markup Language version 5\">HTML 5</abbr>,\n        <abbr title=\"Cascading
+        Style Sheets level 3\">CSS 3</abbr>, and jQuery, all of which allow for the
+        creation of\n        dynamic Web sites.</p>\n    </li>\n    <li class=\"cms-frameworks\">\n
+        \     <h3>CMS and Frameworks</h3>\n\n      <p>Experience using <abbr title=\"Model
+        View Controller\">MVC</abbr> frameworks <em>Yii</em>, <em>Laravel</em> and\n
+        \       <em>CakePHP</em>, <abbr title=\"Content Management System\">CMS</abbr>
+        platforms <em>Wordpress</em>,\n        <em>Perch CMS</em> and <em>CouchCMS</em>,
+        and e-commerce platforms <em>Magento</em> and <em>Lemonstand</em>.</p>\n    </li>\n
+        \   <li class=\"accessibility\">\n      <h3>Accessibility</h3>\n\n      <p>Knowledge
+        of Web standards, allowing for the creation of sites that work across multiple
+        browsers and devices,\n        while ensuring they comply with accessibility
+        legislation.</p>\n    </li>\n    <li class=\"usability\">\n      <h3>Usability</h3>\n\n
+        \     <p>Experience with usability evaluation techniques, which are useful
+        for testing a site's ease of use, and\n        highlighting where improvements
+        could be made.</p>\n    </li>\n    <li class=\"server-management\">\n      <h3>Server
+        Management</h3>\n\n      <p>Experience installing, configuring and running
+        a Linux (Debian 6) Web server environment for hosting Web\n        sites.</p>\n
+        \   </li>\n    <li class=\"version-control\">\n      <h3>Version Control</h3>\n\n
+        \     <p>Experience using Git distributed version control system, allowing
+        for the tracking of changes throughout a\n        project's history.</p>\n
+        \   </li>\n  </ul>\n\n</section>\n      <section id=\"education\" class=\"education\">\n\n
+        \ <h2>Education</h2>\n\n  <h3>First Class Honours Degree in Web Development
+        (BSc) from University of Worcester</h3>\n\n  <p>I first gained an interest
+        in the World Wide Web as a hobby in 1999. I spent much of my spare time learning
+        Web\n    design and development techniques, and as time progressed, and my
+        skills improved, I decided to look for work in the\n    Web industry. I found
+        that finding work, despite my self-taught skills, difficult due to a lack
+        of qualifications,\n    which prompted me to go to university.</p>\n\n  <p>My
+        time at university was a vastly positive time in my life, and allowed me to
+        improve upon my existing design and\n    development skills, in addition to
+        learning project management, planning and research techniques. Among the modules\n
+        \   studied, I particularly enjoyed:</p>\n\n  <ul class=\"education-modules\">\n
+        \   <li><strong>Advanced Web Design</strong>, which covered advanced XHTML
+        and CSS techniques, in addition to Web\n      standards and cross browser
+        compatibility, allowing for maximum Web exposure.\n    </li>\n    <li><strong>Qualitative
+        Interface Evaluation</strong>, which covered interface design and usability
+        evaluation,\n      allowing for the creation of sites that are both attractive
+        and easy to use.\n    </li>\n    <li><strong>Publishing on the Web</strong>,
+        which covered a range of Web publishing mediums, such as blogs and\n      social
+        networking sites, and how to use them effectively.\n    </li>\n    <li><strong>Object
+        Oriented Programming</strong>, which taught the fundamentals of OOP, and allowed
+        me to vastly\n      improve my PHP development skills.\n    </li>\n  </ul>\n\n
+        \ <p>I've also been <a href=\"http://www.worcester.ac.uk/community/daniel-hollands.html\">featured
+        as a success story</a>\n    on the University of Worcester's Web site.</p>\n\n
+        \ <h3 class=\"education-win\">Worcester Ideas Network</h3>\n\n  <p>In my third
+        year at university I was voted into the position of chairperson for the entrepreneurial
+        society\n    Worcester Ideas Network (WIN). The society helps students by
+        organising workshops and participating in networking\n    and competitions
+        across Europe. One such competition was EPOCH, hosted by the London School
+        of Economics in the\n    style of The Apprentice TV show. My team won the
+        marketing challenge which was judged by Orange, and continued to\n    come
+        second place in the competition overall.</p>\n\n  <p>My time as chairperson
+        of the society provided me with valuable leadership and planning experience,
+        as demonstrated\n    in the planning of a trip to Germany to participate in
+        an international conference, and the organisation of a series\n    of seminars
+        on idea generation, presented by lecturers from other universities.</p>\n\n</section>\n
+        \     <section id=\"employment\" class=\"employment\">\n\n  <h2>Employment</h2>\n\n
+        \ <section class=\"employment-school-stickers\">\n    <h3 class=\"employment-role\">Senior
+        Web Developer for School Stickers</h3>\n\n    <ul class=\"employment-details\">\n
+        \     <li class=\"employment-location\">Birmingham</li>\n      <li class=\"employment-dates\">Jul
+        2013 - Present</li>\n    </ul>\n\n    <ul class=\"employment-tags\">\n      <li>Yii</li>\n
+        \     <li>Magento</li>\n      <li>E-Commerce</li>\n      <li>Subversion</li>\n
+        \     <li>\n        <abbr title=\"REpresentational State Transfer architectural
+        style for distributed hypermedia systems\">REST</abbr>ful\n        <abbr title=\"Application
+        Programming Interface\">API</abbr>s\n      </li>\n      <li>Automated Deployment</li>\n
+        \   </ul>\n\n    <p class=\"employment-description\">Working as part of a
+        small team of developers, my role consists of the maintenance\n      and development
+        of the sites and systems which power the School Stickers behaviour reward
+        experience. This\n      includes everything from the Magento e-commerce store
+        used to sell our products, to the RESTful APIs which allow\n      schools
+        to access data on their students.</p>\n  </section>\n\n  <section class=\"employment-ghost-design\">\n
+        \   <h3 class=\"employment-role\">Web Developer for Ghost Design</h3>\n\n
+        \   <ul class=\"employment-details\">\n      <li class=\"employment-location\">Leamington
+        Spa</li>\n      <li class=\"employment-dates\">Sep 2011 - Jul 2013</li>\n
+        \   </ul>\n\n    <ul class=\"employment-tags\">\n      <li>Wordpress</li>\n
+        \     <li>PerchCMS</li>\n      <li>Lemonstand</li>\n      <li>CakePHP</li>\n
+        \     <li>Project Management</li>\n      <li>Git</li>\n    </ul>\n\n    <p
+        class=\"employment-description\">I was responsible for the development of
+        all the Web elements of projects taken on\n      by the company. This includes
+        writing project proposals and specifications, frontend coding of Photoshop
+        designs,\n      backend development using the tools best suited to the project,
+        and liaising with clients.</p>\n  </section>\n\n  <section class=\"employment-propeller-communications\">\n
+        \   <h3 class=\"employment-role\">Backend PHP Developer for Propeller Communications</h3>\n\n
+        \   <ul class=\"employment-details\">\n      <li class=\"employment-location\">Rugby</li>\n
+        \     <li class=\"employment-dates\">Oct 2010 - Sep 2011</li>\n    </ul>\n\n
+        \   <ul class=\"employment-tags\">\n      <li>PHP</li>\n      <li>MySQL</li>\n
+        \     <li>Fuel</li>\n      <li>CodeIgniter</li>\n      <li>Mercurial</li>\n
+        \   </ul>\n\n    <p class=\"employment-description\">My role consisted of
+        development with the company's MVC-based framework to build\n      dynamic
+        PHP-based CMS Web sites. This role included management of Mercurial repositories,
+        which provides a\n      safety-net during development, and allows multiple
+        members of a team to work on the same project. The role has\n      also allowed
+        me to gain experience with jQuery and the use of AJAX, to provide a seamless
+        end user experience.</p>\n  </section>\n\n  <section>\n    <h3 class=\"employment-role\">Graduate
+        Intern Web Developer for South Worcestershire College</h3>\n\n    <ul class=\"employment-details\">\n
+        \     <li class=\"employment-location\">Evesham</li>\n      <li class=\"employment-dates\">Jan
+        2010 - Sep 2010</li>\n    </ul>\n\n    <ul class=\"employment-tags\">\n      <li>CakePHP</li>\n
+        \     <li>XHTML</li>\n      <li>CSS</li>\n      <li>Project Management</li>\n
+        \   </ul>\n\n    <p class=\"employment-description\">I was solely responsible
+        for the planning, development, testing, launch and\n      maintenance of a
+        new college Web site. The focus of the new site was that of making it easier
+        to use, to improve\n      compliance with the Disability Discrimination Act,
+        and to improve search engine rankings. Upon completion it was\n      greeted
+        with positive feedback from both staff and students at the college, and an
+        increased conversion rate.</p>\n  </section>\n\n  <section class=\"employment-university-of-worcester\">\n
+        \   <h3 class=\"employment-role\">IT and Media Support Technician for University
+        of Worcester</h3>\n\n    <ul class=\"employment-details\">\n      <li class=\"employment-location\">Worcester</li>\n
+        \     <li class=\"employment-dates\">Sep 2008 - Dec 2009</li>\n    </ul>\n\n
+        \   <ul class=\"employment-tags\">\n      <li>Windows</li>\n      <li>Printers</li>\n
+        \     <li>Networking</li>\n      <li>Public Facing</li>\n    </ul>\n\n    <p
+        class=\"employment-description\">I was part of a team responsible for providing
+        media and technical support to\n      students within the university's library.
+        The role involved supporting the university's PCs, printers and\n      software,
+        as well as helping student's laptops to connect to the network. We needed
+        good customer service skills,\n      to ensure we dealt with customers with
+        courtesy and respect, and as we were the most senior members of staff\n      during
+        our shifts, we had to uphold a professional image of the library and ensure
+        compliance of its code of\n      conduct.</p>\n  </section>\n\n  <section>\n
+        \   <h3 class=\"employment-role\">Technical Support Technician for Fujitsu
+        / Tesco Broadband</h3>\n\n    <ul class=\"employment-details\">\n      <li
+        class=\"employment-location\">Sidcup</li>\n      <li class=\"employment-dates\">Aug
+        2005 - Mar 2006</li>\n    </ul>\n\n    <ul class=\"employment-tags\">\n      <li>ADSL</li>\n
+        \     <li>Technical Support</li>\n      <li>Telephone Manner</li>\n    </ul>\n\n
+        \   <p class=\"employment-description\">This call centre based role consisted
+        of providing support to customers\n      experiencing trouble using their
+        broadband connection. It required a good telephone manner and the ability
+        to\n      explain complex instructions in an easy to understand way.</p>\n
+        \ </section>\n\n</section><!-- .employment -->\n      <section id=\"projects\"
+        class=\"projects\">\n\n  <h2>Projects</h2>\n\n  <section>\n    <h3>Birmingham.IO</h3>\n\n
+        \   <p><a href=\"http://birmingham.io/\">Birmingham.IO</a> is an online community
+        catering to the tech, coder, start-up\n      and geek communities in Birmingham
+        and surrounding areas. It was inspired by city's vibrant tech scene, which
+        is\n      enabled by the individuals, businesses, and meet-up groups that
+        exist within it.</p>\n\n    <p>After getting involved in the tech scene by
+        attending various meet-ups, I was shocked to discover the lack of any\n      central
+        online community which catered to them all, the site, so I decided to build
+        it myself, for the purely\n      selfish purpose of wanting something like
+        it it exist.</p>\n\n    <p>The site is powered by Discourse, deployed via
+        Docker, and hosted on a Digital Ocean\n      <abbr title=\"Virtual Machine\">VM</abbr>.
+        I choose these technologies mainly because they're the best tools for the\n
+        \     job, but also because I've never used the technologies involved before,
+        so they provided a challenge and something\n      which I can learn from.</p>\n
+        \ </section>\n\n  <section>\n    <h3>Unknown Tales</h3>\n\n    <p>Unknown
+        Tales is a collaborative interactive fiction platform which is currently in
+        the early stages of\n      development. Inspired by choose-your-own-adventure
+        books such as Fighting Fantasy, Unknown Tales aims to bring the\n      concept
+        into the 21st century with multiple levels of interactivity.</p>\n  </section>\n\n</section><!--
+        .projects -->\n      <section id=\"contact\" class=\"contact\">\n\n  <h2>Contact</h2>\n\n
+        \ <p>If you like what you see and want to get in touch, you can contact me
+        via any of the social networks listed below,\n    by telephoning me using
+        <a href=\"tel:+447887521229\">07887 521 229</a> (or\n    <a href=\"tel:+441213592867\">01213
+        592 867</a> evenings and weekends) or\n    <a href=\"&#109;&#97;&#105;l&#116;&#111;&#58;d&#97;&#110;&#105;el@&#108;&#105;m&#101;&#98;l&#97;&#115;t.&#99;&#111;&#46;&#117;k\">you\n
+        \     can email me</a>.</p>\n\n  <div class=\"social-links\">\n\t<ul>\n\t\t<li><a
+        href=\"http://twitter.com/limeblast/\" class=\"twitter\" title=\"@LimeBlast
+        on Twitter\">@LimeBlast on\tTwitter</a></li>\n\t\t<li><a href=\"http://facebook.com/limeblast/\"
+        class=\"facebook\" title=\"LimeBlast on Facebook\">LimeBlast on Facebook</a></li>\n\t\t<li><a
+        href=\"https://plus.google.com/112741180856524338972?rel=author\" class=\"google-plus\"
+        title=\"Daniel Hollands on Google+\">Daniel Hollands on Google+</a></li>\n\t\t<li><a
+        href=\"http://uk.linkedin.com/in/limeblast\" class=\"linkedin\" title=\"Daniel
+        Hollands on LinkedIn\">Daniel Hollands on LinkedIn</a></li>\n\t\t<li><a href=\"http://stackoverflow.com/users/1049688/daniel-hollands\"
+        class=\"stack-overflow\" title=\"Daniel Hollands on Stack Overflow\">Daniel
+        Hollands on Stack Overflow</a></li>\n\t\t<li><a href=\"http://careers.stackoverflow.com/limeblast\"
+        class=\"careers-20\" title=\"Daniel Hollands on Careers 2.0\">Daniel Hollands
+        on Careers 2.0</a></li>\n\t\t<li><a href=\"https://github.com/LimeBlast\"
+        class=\"github\" title=\"LimeBlast on GitHub\">LimeBlast on GitHub</a></li>\n\t\t<li><a
+        href=\"https://bitbucket.org/LimeBlast\" class=\"bitbucket\" title=\"LimeBlast
+        on BitBucket\">LimeBlast on BitBucket</a></li>\n\t\t<li><a href=\"http://www.codeschool.com/users/LimeBlast\"
+        class=\"code-school\" title=\"LimeBlast on Code School\">LimeBlast on Code
+        School</a></li>\n\t\t<li><a href=\"http://limeblast.co.uk/\" class=\"lime-blast\"
+        title=\"Lime Blast Blog\">Lime Blast Blog</a></li>\n\t</ul>\n</div><!-- .social-links
+        -->\n\n</section><!-- .contact -->\n      <footer class=\"footer\" role=\"contentinfo\">\n
+        \ <p>Site content Copyright &copy; 2014 Daniel Hollands.\n    <a href=\"https://bitbucket.org/LimeBlast/danielhollands.co.uk\">View
+        source on Bitbucket</a>.</p>\n</footer><!-- #footer -->\n    </article><!--
+        .main -->\n\n</div><!-- .wrap -->\n\n\n<script src=\"//code.jquery.com/jquery-1.10.0.min.js\"></script>\n<script>window.jQuery
+        || document.write('<script src=\"/js/vendor/jquery-1.10.0-04c9d49c.js\"><\\/script>')</script>\n<!--[if
+        (gte IE 6)&(lte IE 8)]>\n\t<script src=\"/js/vendor/selectivizr-1.0.2-a876a145.js\"
+        type=\"text/javascript\"></script>\n<![endif]-->\n<script src=\"/js/main-64df61fd.js\"
+        type=\"text/javascript\"></script>\n\n<script type=\"text/javascript\">\n\tvar
+        _gas = _gas || [];\n\t_gas.push(['_setAccount', 'UA-27778608-1']);\n\t_gas.push(['_setDomainName',
+        '.danielhollands.co.uk']);\n\t_gas.push(['_trackPageview']);\n\t_gas.push(['_gasTrackForms']);\n\t_gas.push(['_gasTrackOutboundLinks']);\n\t_gas.push(['_gasTrackMaxScroll']);\n\t_gas.push(['_gasTrackDownloads']);\n\t_gas.push(['_gasTrackYoutube',
+        {force: true}]);\n\t_gas.push(['_gasTrackVimeo', {force: true}]);\n\t_gas.push(['_gasTrackMailto']);\n\n\t(function
+        () {\n\t\tvar ga = document.createElement('script');\n\t\tga.type = 'text/javascript';\n\t\tga.async
+        = true;\n\t\tga.src = '//cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min.js';\n\t\tvar
+        s = document.getElementsByTagName('script')[0];\n\t\ts.parentNode.insertBefore(ga,
+        s);\n\t})();\n</script>\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 16:32:57 GMT
+recorded_with: VCR 2.9.3
