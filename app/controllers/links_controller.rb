@@ -9,6 +9,9 @@ class LinksController < ApplicationController
 
   def create
     @link = Link.new(link_params)
+    doc = Scraper.new(url: @link.url)
+    @link.title = doc.title
+    @link.body = doc.body
     if @link.save
       flash[:notice] = 'Link was successfully created'
       redirect_to links_path

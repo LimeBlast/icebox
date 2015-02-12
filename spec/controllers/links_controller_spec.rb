@@ -17,33 +17,6 @@ RSpec.describe LinksController, :type => :controller do
     end
   end
 
-  describe 'GET show' do
-    before(:each) do
-      @link       = object_double(Link.new, url: 'http://something.com')
-      @link_class = class_double(Link).as_stubbed_const
-      @pismo_dub  = class_double(Pismo::Document).as_stubbed_const
-    end
-
-    it 'fetches the requested link' do
-      expect(@link_class).to receive(:find).with('1').and_return(@link)
-      allow(@pismo_dub).to receive_message_chain(:new, :body)
-      get :show, id: 1
-    end
-
-    it 'renders the show template' do
-      allow(@link_class).to receive(:find).and_return(@link)
-      allow(@pismo_dub).to receive_message_chain(:new, :body)
-      get :show, id: 1
-      expect(response).to render_template(:show)
-    end
-
-    it "fetches a url's content from pismo" do
-      allow(@link_class).to receive(:find).and_return(@link)
-      expect(@pismo_dub).to receive_message_chain(:new, :body)
-      get :show, id: 1
-    end
-  end
-
   describe 'GET new' do
     let(:link_class) { class_double(Link).as_stubbed_const }
     let(:link) { object_double(Link) }
@@ -61,35 +34,43 @@ RSpec.describe LinksController, :type => :controller do
   end
 
   describe 'POST create' do
-    let(:link_params) { { url: 'https://test.org' } }
-    let(:link_class) { class_double(Link).as_stubbed_const }
-    let(:link_object) { double(Link, save: true) }
+    let(:url) { 'http://test.org/' }
 
-    it 'scrapes the url submitted' do
+    let(:link_params) { { url: url } }
+    let(:link_class) { class_double('Link').as_stubbed_const }
+    let(:link_object) { double('Link') }
 
+    let(:scraper_class) { class_double('Scraper').as_stubbed_const }
+    let(:doc_object) { double('Scraper', url: url, title: 'test title', body: 'test body') }
+
+    before :each do
+      allow(link_object).to receive(:title=)
+      allow(link_object).to receive(:body=)
+      allow(link_object).to receive(:url).and_return(url)
+      allow(link_object).to receive(:save).and_return(true)
+      allow(scraper_class).to receive(:new).with(url: url).and_return(doc_object)
     end
+
+    # it 'scrapes the submitted url' do
+    #   expect(scraper_class).to receive(:new).with(url: url).and_return(doc_object)
+    # end
 
     it 'attempts to creates a new link' do
       expect(link_class).to receive(:new).with(link_params).and_return(link_object)
       post :create, link: link_params
     end
 
-    context 'create successful' do
-      it 'redirects to the index path' do
-        allow(link_class).to receive(:new).and_return(link_object)
-        post :create, link: link_params
-        expect(response).to redirect_to(links_path)
-      end
+    it 'redirects to the index path if successful' do
+      allow(link_class).to receive(:new).and_return(link_object)
+      post :create, link: link_params
+      expect(response).to redirect_to(links_path)
     end
 
-    context 'create unsuccessful' do
-      let(:link_object) { double(Link, save: false) }
-
-      it 'renders the new template' do
-        allow(link_class).to receive(:new).and_return(link_object)
-        post :create, link: link_params
-        expect(response).to render_template(:new)
-      end
+    it 'renders the new template if unsuccessful' do
+      allow(link_object).to receive(:save).and_return(false)
+      allow(link_class).to receive(:new).and_return(link_object)
+      post :create, link: link_params
+      expect(response).to render_template(:new)
     end
   end
 
