@@ -7,6 +7,10 @@ class LinksController < ApplicationController
     @link = Link.new
   end
 
+  def show
+    @link = Link.find(params[:id])
+  end
+
   def create
     @link = Link.new(link_params)
     doc = Scraper.new(url: @link.url)

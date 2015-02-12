@@ -17,6 +17,17 @@ RSpec.describe LinksController, :type => :controller do
     end
   end
 
+  describe 'GET show' do
+    let(:link_id) { 1.to_s }
+    let(:link_class) { class_double(Link).as_stubbed_const }
+    let(:link) { object_double(Link) }
+
+    it 'assigns a link model' do
+      expect(link_class).to receive(:find).with(link_id).and_return(link)
+      get :show, id: link_id
+    end
+  end
+
   describe 'GET new' do
     let(:link_class) { class_double(Link).as_stubbed_const }
     let(:link) { object_double(Link) }

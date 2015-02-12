@@ -10,7 +10,7 @@ feature 'Displaying Saved Links' do
     VCR.eject_cassette
   end
 
-  xscenario 'User selects a link from a list of saved links' do
+  scenario 'User selects a link from a list of saved links' do
     visit '/links/new'
     fill_in 'Url', with: 'http://danielhollands.co.uk/'
     click_button 'Submit'
