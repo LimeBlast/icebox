@@ -8,7 +8,7 @@ RSpec.describe 'links/new.html.erb', :type => :view do
     render
   end
 
-  it 'displays story form' do
+  it 'displays link form' do
     expect(rendered).to have_form(links_path, :post) do
       with_text_field('link[url]')
       with_submit('Submit')
