@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "users/new", :type => :view do
+RSpec.describe 'users/new.html.erb', :type => :view do
   let(:user) { build(:user) }
 
   before :each do
@@ -13,7 +13,7 @@ RSpec.describe "users/new", :type => :view do
       with_text_field('user[email]')
       with_text_field('user[password]')
       with_text_field('user[password_confirmation]')
-      with_submit('Submit')
+      with_submit('Sign up')
     end
   end
 end
