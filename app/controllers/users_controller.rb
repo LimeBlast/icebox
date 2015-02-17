@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      auto_login(@user)
       flash[:notice] = 'Welcome! You have signed up successfully.'
       redirect_to dashboard_path
     else

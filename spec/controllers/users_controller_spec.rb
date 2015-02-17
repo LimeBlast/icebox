@@ -22,7 +22,7 @@ RSpec.describe UsersController, :type => :controller do
 
     let(:user_params) { { email: email, password: password, password_confirmation: password } }
     let(:user_class) { class_double('User').as_stubbed_const }
-    let(:user_object) { double('User') }
+    let(:user_object) { double('User', id: 1) }
 
     before :each do
       allow(user_object).to receive(:save).and_return(true)
