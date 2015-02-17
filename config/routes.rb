@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
+  root to: 'static_pages#home'
+
   get '/signup', to: 'users#new', as: :signup
+  get '/login', to: 'user_sessions#new', as: :login
+  post '/logout', to: 'user_sessions#destroy', :as => :logout
 
   resources :links, only: [:index, :show, :new, :create]
   resources :users, only: [:new, :create]
+  resources :user_sessions, only: [:new, :create, :destory]
   resource :dashboard, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.

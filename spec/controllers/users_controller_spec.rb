@@ -5,10 +5,9 @@ RSpec.describe UsersController, :type => :controller do
     let(:user_class) { class_double(User).as_stubbed_const }
     let(:user) { object_double(User) }
 
-    it 'returns http success' do
-      allow(user_class).to receive(:new).and_return(user)
+    it 'renders the new template' do
       get :new
-      expect(response).to have_http_status(:success)
+      expect(response).to render_template(:new)
     end
 
     it 'assigns a user model' do

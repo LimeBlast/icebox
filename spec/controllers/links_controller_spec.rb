@@ -32,10 +32,10 @@ RSpec.describe LinksController, :type => :controller do
     let(:link_class) { class_double(Link).as_stubbed_const }
     let(:link) { object_double(Link) }
 
-    it 'returns http success' do
+    it 'renders the new template' do
       allow(link_class).to receive(:new).and_return(link)
       get :new
-      expect(response).to have_http_status(:success)
+      expect(response).to render_template(:new)
     end
 
     it 'assigns a link model' do
