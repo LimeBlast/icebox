@@ -8,4 +8,12 @@ RSpec.describe 'Routes', :type => :routing do
           action: 'new'
         )
   end
+
+  it 'uses GET /dashboard for the dashboard' do
+    expect(:get => '/dashboard')
+      .to route_to(
+          controller: 'dashboards',
+          action: 'show'
+        )
+  end
 end

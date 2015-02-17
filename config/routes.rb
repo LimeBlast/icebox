@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :links, only: [:index, :show, :new, :create]
   resources :users, only: [:new, :create]
+  resource :dashboard, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'User Accounts' do
 
-  xscenario 'A User can sign up for an account' do
+  scenario 'A User can sign up for an account' do
     visit '/signup'
     fill_in 'user_email', with: 'tester@test.com'
     fill_in 'user_password', with: 'testpassword'
