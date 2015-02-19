@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
   def new
-    @user = User.new
+    @register_user = RegisterUser.new
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.save
-      auto_login(@user)
+    @register_user = RegisterUser.run(params[:register_user])
+    if @register_user.valid?
+      auto_login(@register_user.result)
       flash[:notice] = 'Welcome! You have signed up successfully.'
       redirect_to dashboard_path
     else
@@ -14,10 +14,4 @@ class UsersController < ApplicationController
       render :new
     end
   end
-
-  private
-
-    def user_params
-      params.require(:user).permit(:email, :password, :password_confirmation)
-    end
 end
