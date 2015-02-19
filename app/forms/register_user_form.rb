@@ -1,4 +1,4 @@
-class RegisterUser < ActiveInteraction::Base
+class RegisterUserForm < ActiveInteraction::Base
   string :email, :password, :password_confirmation
 
   validates :email, presence: true
@@ -10,6 +10,10 @@ class RegisterUser < ActiveInteraction::Base
 
   def execute
     User.create!(inputs)
+  end
+
+  def self.model_name
+    ActiveModel::Name.new(self, nil, 'RegisterUser')
   end
 
   private

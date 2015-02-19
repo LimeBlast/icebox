@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'users/new.html.erb', :type => :view do
-  let(:register_user) { RegisterUser.new }
+  let(:register_user_form) { RegisterUserForm.new }
 
   before :each do
-    assign(:register_user, register_user)
+    assign(:register_user_form, register_user_form)
     render
   end
 
