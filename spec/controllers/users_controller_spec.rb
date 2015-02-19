@@ -40,7 +40,7 @@ RSpec.describe UsersController, :type => :controller do
     context 'when register user is successful' do
       let(:valid?) { true }
 
-      it 'attempts to log the user in' do
+      it 'logs the user in' do
         expect(controller).to receive(:auto_login).with(user_object)
         post :create, register_user: register_user_params
       end
