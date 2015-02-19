@@ -10,9 +10,9 @@ RSpec.describe 'users/new.html.erb', :type => :view do
 
   it 'displays user form' do
     expect(rendered).to have_form(users_path, :post) do
-      with_text_field('register_user[email]')
-      with_text_field('register_user[password]')
-      with_text_field('register_user[password_confirmation]')
+      with_email_field('register_user[email]')
+      with_password_field('register_user[password]')
+      with_password_field('register_user[password_confirmation]')
       with_submit('Sign up')
     end
   end
