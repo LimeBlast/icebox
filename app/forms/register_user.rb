@@ -1,6 +1,7 @@
 class RegisterUser < ActiveInteraction::Base
   string :email, :password, :password_confirmation
 
+  validates :email, presence: true
   validates :password, length: { minimum: 3 }
   validates :password, confirmation: true
   validates :password_confirmation, presence: true
