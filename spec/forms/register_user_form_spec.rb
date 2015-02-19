@@ -34,7 +34,7 @@ RSpec.describe RegisterUserForm do
 
     it 'is invalid' do
       result = RegisterUserForm.run(valid_params)
-      expect(result.valid?).to eq(false)
+      expect(result).to_not be_valid
     end
   end
 
@@ -44,7 +44,7 @@ RSpec.describe RegisterUserForm do
 
     it 'is invalid' do
       result = RegisterUserForm.run(valid_params)
-      expect(result.valid?).to eq(false)
+      expect(result).to_not be_valid
     end
   end
 
@@ -53,7 +53,7 @@ RSpec.describe RegisterUserForm do
 
     it 'is invalid' do
       result = RegisterUserForm.run(valid_params)
-      expect(result.valid?).to eq(false)
+      expect(result).to_not be_valid
     end
   end
 
@@ -62,7 +62,16 @@ RSpec.describe RegisterUserForm do
 
     it 'is invalid' do
       result = RegisterUserForm.run(valid_params)
-      expect(result.valid?).to eq(false)
+      expect(result).to_not be_valid
+    end
+  end
+
+  context 'when email is invalid format' do
+    let(:email) { 'email @ example . com' }
+
+    it 'is invalid' do
+      result = RegisterUserForm.run(valid_params)
+      expect(result).to_not be_valid
     end
   end
 
@@ -71,7 +80,7 @@ RSpec.describe RegisterUserForm do
 
     it 'is invalid' do
       result = RegisterUserForm.run(valid_params)
-      expect(result.valid?).to eq(false)
+      expect(result).to_not be_valid
     end
   end
 end
