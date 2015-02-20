@@ -11,4 +11,10 @@ feature 'User Accounts' do
     expect(page).to have_content('Welcome! You have signed up successfully.')
     expect(page).to have_content('Dashboard')
   end
+
+  scenario 'A User must complete the form' do
+    visit '/signup'
+    click_button 'Sign up'
+    expect(page).to have_content('Something went wrong, please try again.')
+  end
 end
