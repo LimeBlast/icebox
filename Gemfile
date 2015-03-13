@@ -10,7 +10,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'pismo'
 gem 'sorcery'
-gem 'interactor-rails', '~> 2.0'
 gem 'active_interaction', '~> 1.5'
 gem 'formtastic'
 

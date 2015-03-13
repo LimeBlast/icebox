@@ -101,10 +101,6 @@ GEM
     hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.7.0)
-    interactor (3.1.0)
-    interactor-rails (2.0.1)
-      interactor (~> 3.0)
-      rails (>= 3, < 5)
     jbuilder (2.2.7)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -296,7 +292,6 @@ DEPENDENCIES
   formtastic
   guard
   guard-rspec
-  interactor-rails (~> 2.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg
