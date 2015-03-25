@@ -1,0 +1,3 @@
+[branch "master"]
+	; https://semaphoreci.com/docs/pushing-to-bitbucket-doesnt-always-trigger-a-build.html
+	mergeoptions = --no-ff
