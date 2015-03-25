@@ -9,7 +9,7 @@ RSpec.describe 'links/index.html.erb', :type => :view do
   end
 
   it 'shows the page title' do
-    expect(rendered).to have_css('h1', 'Links')
+    expect(rendered).to have_css('h1', text: 'Links')
   end
 
   it 'displays a list of links' do
